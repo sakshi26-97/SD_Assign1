@@ -1,0 +1,66 @@
+body {
+    background-image: url('bg.jpg');
+}
+
+.flex-container {
+    display:flex;
+    justify-content: center;
+}
+
+#canvas{
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    margin-top: 5px;
+    display: block;
+}
+h2 {
+    color: navy;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    align-self: center;
+}
+
+.flex-container > h3 { 
+    color: navy;
+    font-size: 30px;
+    font-family: Orbitron;
+    align-items: center;
+}
+
+select {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-color: navy;
+    border-radius: 4px;
+    background-color: white;
+}
+
+select:focus{
+       outline: none;
+}
+
+button{
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    margin: 15px;;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover, button:visited{
+    background-color: dodgerblue;
+}
+
+button:focus{
+    outline: none;
+}

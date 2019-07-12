@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Clock</title>
+        <meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+        <link rel='stylesheet' type='text/css' href='clock.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+
+<body >
+
+    <!-- Analog Clock -->
+    <div class="flex-container">
+        <canvas id="canvas" width="400" height="350"> </canvas>
+    </div>
+
+    <!-- Digital Clock in 12 hour format -->
+    <div class="flex-container" id="digital" style="display: none;">
+        <h2 id='clock'></h2>
+    </div> 
+
+    <!-- Digital Clock in 24 hour format  -->
+    <div class="flex-container" id="digital24" style="display: none;">
+        <h2 id='clock24'></h2>
+    </div> 
+
+    <div class="flex-container">
+        <h3>Set Alarm Time</h3>
+    </div>   
+        
+    <div class="flex-container">
+        <select id='alarmhrs' ></select>
+        <select id='alarmmins' ></select>
+        <select id='alarmsecs' ></select>
+        <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+    </div>
+
+    <div id='buttonHolder' class="flex-container"> 
+        <button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+        <button  id='clearButton' onClick='alarmClear()'>Dismiss Alarm</button>  
+        <button  id='adAlarm' onclick="analogToDigital(); hoursMenu();">Convert to Digital Alarm</button> 
+        <button  id='digital12to24' style="display: none;" onclick="digitalFormat(); hoursMenu();">Convert to 24 hour format</button>  
+    </div>
+
+    <!-- <script src="analogclock.js"></script> -->
+
+    <script src="clock.js"></script>
+   
+    
+
+</body>
+</html>
