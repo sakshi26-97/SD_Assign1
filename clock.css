@@ -16,6 +16,7 @@ body {
     margin-top: 5px;
     display: block;
 }
+
 h2 {
     color: navy;
     font-size: 60px;
@@ -42,6 +43,10 @@ select {
 
 select:focus{
        outline: none;
+}
+
+select:disabled {
+    cursor: not-allowed;
 }
 
 button{
