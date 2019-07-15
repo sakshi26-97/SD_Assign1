@@ -2,11 +2,13 @@ body {
     background-image: url('bg.jpg');
 }
 
+/* style flex container */
 .flex-container {
     display:flex;
     justify-content: center;
 }
 
+/* style canvas */
 #canvas{
     top:0;
     bottom:0;
@@ -17,6 +19,7 @@ body {
     display: block;
 }
 
+/* styling for header tag */
 h2 {
     color: navy;
     font-size: 60px;
@@ -32,6 +35,7 @@ h2 {
     align-items: center;
 }
 
+/* styling for select options */
 select {
     width: 100px;
     padding: 10px;
@@ -49,6 +53,7 @@ select:disabled {
     cursor: not-allowed;
 }
 
+/* styling for button */
 button{
     background-color: midnightblue;
     color: white;

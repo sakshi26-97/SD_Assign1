@@ -227,7 +227,7 @@ function alarmSet() {
     document.getElementById('alarmhrs').disabled = true;
 	document.getElementById('alarmmins').disabled = true;
 	document.getElementById('alarmsecs').disabled = true;
-    document.getElementById('ampm').disabled = true;
+    document.getElementById('ampm').disabled = true;    
     document.getElementById("alarmTime").innerHTML = alarmTime;
 
 //when alarmtime is equal to currenttime then play a sound
