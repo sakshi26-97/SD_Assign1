@@ -4,14 +4,14 @@ function analogToDigital() {
         if (document.getElementById('canvas').style.display == 'none') {
             document.getElementById('canvas').style.display = 'flex';
             document.getElementById('digital').style.display = 'none';
-            document.getElementById('adAlarm').innerHTML = 'Convert to Digital Alarm';
+            document.getElementById('analogToDigital').innerHTML = 'Convert to Digital Alarm';
             document.getElementById('digital12to24').style.display = 'none';
 
         }
         else {
             document.getElementById('canvas').style.display = 'none';
             document.getElementById('digital').style.display = 'flex';
-            document.getElementById('adAlarm').innerHTML = 'Convert to Analog Alarm';
+            document.getElementById('analogToDigital').innerHTML = 'Convert to Analog Alarm';
             document.getElementById('digital12to24').style.display = 'flex';   
         }
         document.getElementById('digital24').style.display = 'none'; 
@@ -27,14 +27,14 @@ function digitalFormat() {
             document.getElementById('digital24').style.display = 'none';
             document.getElementById('digital12to24').innerHTML = 'Convert to 24 hour format';
             document.getElementById('ampm').style.display = 'flex';
-            document.getElementById('adAlarm').style.display = 'flex'; 
+            document.getElementById('analogToDigital').style.display = 'flex'; 
         }
         else {
             document.getElementById('digital').style.display = 'none';
             document.getElementById('digital24').style.display = 'flex';
             document.getElementById('digital12to24').innerHTML = 'Convert to 12 hour format';
             document.getElementById('ampm').style.display = 'none';    
-            document.getElementById('adAlarm').style.display = 'none';       
+            document.getElementById('analogToDigital').style.display = 'none';       
         }
     }
 }
